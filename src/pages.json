@@ -27,28 +27,28 @@
     "spacing": "3px",
     "list": [
       {
-        "iconPath": "static/tabbar/home.png",
-        "selectedIconPath": "static/tabbar/homeHL.png",
         "pagePath": "pages/index/index",
         "text": "首页",
         "icon": "home",
         "iconType": "uiLib"
       },
       {
-        "iconPath": "static/tabbar/example.png",
-        "selectedIconPath": "static/tabbar/exampleHL.png",
         "pagePath": "pages/about/about",
         "text": "关于",
         "icon": "i-carbon-code",
         "iconType": "unocss"
       },
       {
-        "iconPath": "static/tabbar/example.png",
-        "selectedIconPath": "static/tabbar/exampleHL.png",
         "pagePath": "pages/test/test",
         "text": "测试",
         "icon": "i-carbon-carbon-for-ibm-product",
         "iconType": "unocss"
+      },
+      {
+        "pagePath": "pages/waterfall/waterfall1",
+        "text": "瀑布流",
+        "icon": "iconfont i-carbon-application-virtual",
+        "iconType": "iconfont"
       }
     ]
   },
@@ -92,6 +92,18 @@
       "layout": "tabbar",
       "style": {
         "navigationBarTitleText": "测试页面"
+      }
+    },
+    {
+      "path": "pages/waterfall/SimulatedImage",
+      "type": "page"
+    },
+    {
+      "path": "pages/waterfall/waterfall1",
+      "type": "page",
+      "layout": "tabbar",
+      "style": {
+        "navigationBarTitleText": "瀑布流"
       }
     }
   ],

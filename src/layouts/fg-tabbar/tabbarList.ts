@@ -23,8 +23,8 @@ export const selectedTabbarStrategy = TABBAR_MAP.NATIVE_TABBAR
 // selectedTabbarStrategy==NO_TABBAR(0) 时，tabbarList 不生效
 export const tabbarList: TabBar['list'] = [
   {
-    iconPath: 'static/tabbar/home.png',
-    selectedIconPath: 'static/tabbar/homeHL.png',
+    // iconPath: 'static/tabbar/home.png',
+    // selectedIconPath: 'static/tabbar/homeHL.png',
     pagePath: 'pages/index/index',
     text: '首页',
     icon: 'home',
@@ -32,8 +32,8 @@ export const tabbarList: TabBar['list'] = [
     iconType: 'uiLib',
   },
   {
-    iconPath: 'static/tabbar/example.png',
-    selectedIconPath: 'static/tabbar/exampleHL.png',
+    // iconPath: 'static/tabbar/example.png',
+    // selectedIconPath: 'static/tabbar/exampleHL.png',
     pagePath: 'pages/about/about',
     text: '关于',
     icon: 'i-carbon-code',
@@ -41,8 +41,8 @@ export const tabbarList: TabBar['list'] = [
     iconType: 'unocss',
   },
   {
-    iconPath: 'static/tabbar/example.png',
-    selectedIconPath: 'static/tabbar/exampleHL.png',
+    // iconPath: 'static/tabbar/example.png',
+    // selectedIconPath: 'static/tabbar/exampleHL.png',
     pagePath: 'pages/test/test',
     text: '测试',
     icon: 'i-carbon-carbon-for-ibm-product',
@@ -55,12 +55,12 @@ export const tabbarList: TabBar['list'] = [
   //   icon: '/static/logo.svg',
   //   iconType: 'local',
   // },
-  // {
-  //   pagePath: 'pages/mine/index',
-  //   text: '我的',
-  //   icon: 'iconfont icon-my',
-  //   iconType: 'iconfont',
-  // },
+  {
+    pagePath: 'pages/waterfall/waterfall1',
+    text: '瀑布流',
+    icon: 'iconfont i-carbon-application-virtual',
+    iconType: 'iconfont',
+  },
 ]
 
 // NATIVE_TABBAR(1) 和 CUSTOM_TABBAR_WITH_CACHE(2) 时，需要tabbar缓存

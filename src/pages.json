@@ -11,6 +11,7 @@
     "custom": {
       "^fg-(.*)": "@/components/fg-$1/fg-$1.vue",
       "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
+      "^sar-(.*)": "sard-uniapp/components/$1/$1.vue",
       "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
     }
   },
@@ -39,6 +40,14 @@
         "pagePath": "pages/about/about",
         "text": "关于",
         "icon": "i-carbon-code",
+        "iconType": "unocss"
+      },
+      {
+        "iconPath": "static/tabbar/example.png",
+        "selectedIconPath": "static/tabbar/exampleHL.png",
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "icon": "i-carbon-carbon-for-ibm-product",
         "iconType": "unocss"
       }
     ]
@@ -75,6 +84,14 @@
       "layout": "default",
       "style": {
         "navigationBarTitleText": "Vue Query 请求演示"
+      }
+    },
+    {
+      "path": "pages/test/test",
+      "type": "page",
+      "layout": "tabbar",
+      "style": {
+        "navigationBarTitleText": "测试页面"
       }
     }
   ],

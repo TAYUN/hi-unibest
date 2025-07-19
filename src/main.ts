@@ -6,6 +6,7 @@ import { routeInterceptor } from './router/interceptor'
 
 import store from './store'
 import '@/style/index.scss'
+import 'sard-uniapp/index.scss'
 import 'virtual:uno.css'
 
 export function createApp() {

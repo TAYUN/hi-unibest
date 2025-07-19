@@ -10,11 +10,11 @@
 <script lang="ts" setup>
 import { random, toast } from 'sard-uniapp'
 import { nextTick, onMounted, ref } from 'vue'
-import { text } from './mockApi'
-import SimulatedImage from './SimulatedImage.vue'
+import { imgs, text } from './mockApi'
 
 interface ListItem {
   title: string
+  url: string
   img: {
     width: number
     height: number
@@ -34,9 +34,10 @@ function getData() {
         const length = random(min, max)
         return {
           title: text.slice(startIndex, startIndex + length),
+          url: imgs[random(0, imgs.length - 1)],
           img: {
-            width: random(100, 500),
-            height: random(100, 500),
+            width: random(100, 300),
+            height: random(100, 300),
           },
         }
       })
@@ -57,18 +58,16 @@ onMounted(async () => {
 </script>
 
 <template>
-  <view>
-    <sar-waterfall class="mx-2" @load="onWaterfallLoad">
-      <sar-waterfall-item v-for="(item, index) in list" :key="index">
-        <template #default="{ onLoad }">
-          <SimulatedImage :meta="item.img" @load="onLoad" />
-          <view class="mt-2">
-            {{ item.title }}
-          </view>
-        </template>
-      </sar-waterfall-item>
-    </sar-waterfall>
-  </view>
+  <sar-waterfall class="mx-2" @load="onWaterfallLoad">
+    <sar-waterfall-item v-for="(item, index) in list" :key="index">
+      <template #default="{ onLoad }">
+        <image mode="widthFix" class="w-full flex" :src="item.url" @load="onLoad" @error="onLoad" />
+        <view class="mt-2 text-base">
+          {{ item.title }}
+        </view>
+      </template>
+    </sar-waterfall-item>
+  </sar-waterfall>
 </template>
 
 <style lang="scss" scoped>

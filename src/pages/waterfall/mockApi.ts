@@ -1,7 +1,7 @@
 export const text = `这是一段很长的示例文本，用于生成随机的标题和内容。包含了各种各样的词汇和句子，可以通过随机截取的方式生成不同长度的标题文本。这样可以模拟真实的数据场景，让瀑布流组件展示更加真实的效果。文本内容可以是产品介绍、新闻资讯、用户评论等各种类型的内容...`
 
 // 图片列表
-const imgs = [
+export const imgs = [
   'https://gips0.baidu.com/it/u=567323913,331130417&fm=3028&app=3028&f=JPEG&fmt=auto&q=100&size=f1000_1000',
   'http://gips3.baidu.com/it/u=775223787,1959096310&fm=3028&app=3028&f=JPEG&fmt=auto?w=1440&h=2560',
   'http://gips3.baidu.com/it/u=3886271102,3123389489&fm=3028&app=3028&f=JPEG&fmt=auto?w=1280&h=960',

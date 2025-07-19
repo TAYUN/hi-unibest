@@ -51,7 +51,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <view class="relative box-border bg-gray" :style="{ paddingTop }">
+  <view class="relative box-border" :style="{ paddingTop }">
     <view class="sbg-fourth absolute inset-0 flex items-center justify-center">
       <text>{{ meta.width }}</text>
       <text>x</text>
